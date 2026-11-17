@@ -1,0 +1,62 @@
+/* Main Employee List Section */
+.employee-list {
+  min-height: 100vh;
+  padding: 110px 45px 40px;
+  background-color: #FFF3E8;
+  box-sizing: border-box;
+}
+
+/* Employee List Heading */
+.employee-list-header {
+  margin-bottom: 30px;
+}
+
+.employee-list-header h2 {
+  color: #87451F;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.employee-list-header p {
+  color: #9C765E;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Employee Cards Container */
+.employee-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+  .employee-list {
+    padding: 100px 25px 30px;
+  }
+
+  .employee-container {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .employee-list {
+    padding: 90px 16px 25px;
+  }
+
+  .employee-list-header h2 {
+    font-size: 22px;
+  }
+
+  .employee-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
